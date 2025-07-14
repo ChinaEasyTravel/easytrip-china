@@ -1,5 +1,10 @@
-
-<!DOCTYPE html>
+<section class="hero">
+  <img src="images/china-banner.jpg" alt="China Landscape" class="hero-img">
+  <div class="hero-text">
+    <h1>Welcome to EasyTrip China</h1>
+    <p>Your Local Travel Partner for Business & Leisure</p>
+  </div>
+</section>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -45,7 +50,7 @@
       <button type="submit">Get a Quote</button>
     </form>
     <div class="contact-info">
-      <p>📧 info@easytripchina.com</p>
+      <p>📧 easytripchina@outlook.com</p>
       <p>📞 +86‑133‑1533‑6492 (Phone)</p>
     </div>
   </section>
