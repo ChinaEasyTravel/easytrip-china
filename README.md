@@ -1,14 +1,9 @@
-# easytrip-china
-index.html             ← Home + Services + Promo + Contact
-styles.css            ← Basic responsive styles
-script.js             ← For basic interactivity (form submission)
-🧩 index.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EasyTrip China – Local Travel Services</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -59,89 +54,3 @@ script.js             ← For basic interactivity (form submission)
     <p>&copy; 2025 EasyTrip China</p>
   </footer>
 
-  <script src="script.js"></script>
-</body>
-</html>
-🎨 styles.css
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-header, section, footer {
-  padding: 1.5rem;
-  margin: 0 auto;
-  max-width: 800px;
-}
-header {
-  background: #0078d4;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-#promo {
-  background: #f8f8f8;
-  text-align: center;
-  margin-top: 1rem;
-}
-.btn {
-  display: inline-block;
-  background: #0078d4;
-  color: white;
-  padding: .7rem 1.2rem;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-top: .5rem;
-}
-.service-card {
-  background: #eef;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 4px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-}
-form input, form textarea, form button {
-  margin: .5rem 0;
-  padding: .8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-form button {
-  background: #0078d4;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-form button:hover {
-  background: #005fa1;
-}
-.contact-info {
-  margin-top: 1rem;
-}
-footer {
-  text-align: center;
-  font-size: .9rem;
-  color: #777;
-}
-@media (min-width: 600px) {
-  .service-card {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    margin-right: 3.3%;
-  }
-  .service-card:last-child {
-    margin-right: 0;
-  }
-}
-🧠 script.js
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thanks for your inquiry! Our consultant will be in touch within 24 hours.');
-  this.reset();
-});
