@@ -46,7 +46,7 @@
     </form>
     <div class="contact-info">
       <p>📧 info@easytripchina.com</p>
-      <p>📞 +86‑135‑0000‑0000 (WhatsApp/Phone)</p>
+      <p>📞 +86‑133‑1533‑6492 (WhatsApp/Phone)</p>
     </div>
   </section>
 
