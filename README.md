@@ -11,10 +11,6 @@
     <p>Your trusted travel partner for luxury and professional experiences in China.</p>
   </header>
 
-  <section class="hero">
-    <img src="images/hero.jpg" alt="China Travel" />
-  </section>
-
   <section class="services">
     <h2>Our Services</h2>
     <ul>
