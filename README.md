@@ -34,7 +34,7 @@
 
   <section class="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:easytripchina@outlook.com">info@easytripchina.com</a></p>
+    <p>Email: <a href="mailto:easytripchina@outlook.com">easytripchina@outlook.com</a></p>
 
   <section class="cta">
     <h2>24/7 Customer Service</h2>
@@ -44,7 +44,7 @@
 </body>
 </html>
   <section id="promo">
-    <h2>🎉 First Booking Offer: 30%–50% OFF!</h2>
+    <h2>🎉 First Booking Offer: 30%–40% OFF!</h2>
     <p>Get your trip started with amazing savings.</p>
     <a href="#contact" class="btn">Book Now</a>
   </section>
@@ -67,7 +67,7 @@
 
   <section id="contact">
     <h2>Contact Our Consultant</h2>
-    <p>We’re available 7 days a week, 9am–9pm CST. Email us to receive your exclusive discount or schedule a one-time free consultation before planning your trip.</p>
+    <p>We’re available 7 days a week, 9am–9pm CST. Email us to receive your exclusive discount or schedule a one-time free consultation before planning your trip.When you travel with Easy Trip China, you’re not just booking a service—you’re gaining a partner you can rely on.</p>
       <p>📧 easytripchina@outlook.com</p>
     </div>
   </section>
