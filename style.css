@@ -1,0 +1,199 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+/* Container widths for sections */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Section titles */
+h2 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #0073e6;
+  padding-bottom: 0.3rem;
+}
+
+/* Special Offer Section */
+.special-offer {
+  background-color: #fff8e1;
+  border-left: 6px solid #ffb300;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(255, 179, 0, 0.15);
+}
+
+.special-offer h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.special-offer p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  background-color: #004080;
+  color: white;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #0073e6;
+  outline: none;
+}
+
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  color: #004080;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+}
+
+/* Security Section */
+.security ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.security ul li {
+  position: relative;
+  margin-bottom: 0.8rem;
+  padding-left: 1.4rem;
+  font-weight: 500;
+  color: #004080;
+}
+
+.security ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #0073e6;
+  font-weight: 700;
+}
+
+/* Contact Section */
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact a {
+  color: #004080;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.contact a:hover,
+.contact a:focus {
+  border-bottom-color: #0073e6;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #00254d;
+  color: #ddd;
+  padding: 1.2rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  user-select: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    margin: 1.5rem 1rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
