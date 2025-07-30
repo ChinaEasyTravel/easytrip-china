@@ -1,66 +1,146 @@
+index.html             ← Home + Services + Promo + Contact
+styles.css            ← Basic responsive styles
+script.js             ← For basic interactivity (form submission)
+index.html
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css" />
+<head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Easy Trip China | Luxury Travel Services</title>
-  <link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EasyTrip China – Local Travel Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
   <header>
-    <h1>Easy Trip China</h1>
-    <p>Your trusted partner for luxury and professional travel experiences in China.</p>
+    <h1>EasyTrip China</h1>
+    <p>Your Local Drivers, Translators & Travel Assistants</p>
   </header>
 
-  <section id="promo" class="special-offer">
-    <h2>🎉 First Booking Offer: 30%–40% OFF!</h2>
-    <p>Get started with amazing savings on your first trip. Email us today for exclusive discounts and a free consultation.</p>
-    <a href="mailto:easytripchina@outlook.com" class="btn">Contact Us</a>
+  <section id="promo">
+    <h2> First Booking Offer: 30%–50% OFF!</h2>
+    <p>Get your trip started with amazing savings.</p>
+    <a href="#contact" class="btn">Book Now</a>
   </section>
 
-  <section id="services" class="services">
+  <section id="services">
     <h2>Our Services</h2>
     <div class="service-card">
-      <h3>English-Speaking Drivers & Guides</h3>
-      <p>Professional, licensed drivers and guides fluent in English, ready to make your journey seamless and enjoyable.</p>
+      <h3>Local Drivers</h3>
+      <p>Professional, licensed, English-speaking drivers for airport rides, tours & transfers — from $30/day.</p>
     </div>
     <div class="service-card">
-      <h3>Luxury Cars & Private Transfers</h3>
-      <p>Travel in style and comfort with our premium fleet of luxury vehicles and private airport transfers.</p>
+      <h3>Translators / Interpreters</h3>
+      <p>Fluent in major languages for your business or travel needs — from $20/hour.</p>
     </div>
     <div class="service-card">
-      <h3>Business Travel Assistance</h3>
-      <p>Expert support for your business trips, including logistics, scheduling, and personalized services.</p>
-    </div>
-    <div class="service-card">
-      <h3>Group Travel Planning & Management</h3>
-      <p>Customized group itineraries and expert coordination to ensure smooth, stress-free group travel.</p>
-    </div>
-    <div class="service-card">
-      <h3>Travel Security Experts</h3>
-      <p>Benefit from over 10 years of experience in travel and security industries to keep you safe throughout your trip.</p>
+      <h3>Travel Assistants</h3>
+      <p>Help with hotel check-ins, dining, tickets & emergency support — from $25/day.</p>
     </div>
   </section>
 
-  <section id="security" class="security">
-    <h2>Travel with Confidence</h2>
-    <p>Your safety and comfort are our highest priorities. Our team combines deep local knowledge with extensive experience in travel security to provide 24/7 support and peace of mind.</p>
-    <ul>
-      <li>English-speaking professionals available around the clock</li>
-      <li>Real-time assistance and emergency support</li>
-      <li>Trusted, vetted drivers and guides with excellent local knowledge</li>
-      <li>Customized travel plans designed with your security in mind</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Our Consultants</h2>
-    <p>We’re available 7 days a week, 9am–9pm CST. Email us to receive your exclusive discount or schedule a one-time free consultation before planning your trip.</p>
-    <p><strong>Email:</strong> <a href="mailto:easytripchina@outlook.com">easytripchina@outlook.com</a></p>
+  <section id="contact">
+    <h2>Contact Our Consultant</h2>
+    <p>We’re available 7 days a week, 9am–9pm CST.</p>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Phone or WhatsApp" required />
+      <textarea name="message" placeholder="Tell us about your trip..." required></textarea>
+      <button type="submit">Get a Quote</button>
+    </form>
+    <div class="contact-info">
+      <p> info@easytripchina.com</p>
+      <p> +86‑135‑0000‑0000 (WhatsApp/Phone)</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Easy Trip China. All rights reserved.</p>
+    <p>&copy; 2025 EasyTrip China</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+styles.css
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header, section, footer {
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+header {
+  background: #0078d4;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+#promo {
+  background: #f8f8f8;
+  text-align: center;
+  margin-top: 1rem;
+}
+.btn {
+  display: inline-block;
+  background: #0078d4;
+  color: white;
+  padding: .7rem 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: .5rem;
+}
+.service-card {
+  background: #eef;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea, form button {
+  margin: .5rem 0;
+  padding: .8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background: #0078d4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background: #005fa1;
+}
+.contact-info {
+  margin-top: 1rem;
+}
+footer {
+  text-align: center;
+  font-size: .9rem;
+  color: #777;
+}
+@media (min-width: 600px) {
+  .service-card {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-right: 3.3%;
+  }
+  .service-card:last-child {
+    margin-right: 0;
+  }
+}
+script.js
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Thanks for your inquiry! Our consultant will be in touch within 24 hours.');
+  this.reset();
+});
